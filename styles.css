@@ -1,0 +1,27 @@
+/* Styl dla całego kontenera z tłem */
+.background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('image1.jfif'), url('image2.jfif'), url('image3.jfif'), url('image4.jfif'), url('image5.jfif'), url('image6.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styl dla iframe z filmem */
+.background iframe {
+    position: relative;
+    z-index: 1; /* Ustawia iframe na wierzchu */
+    border: none; /* Usuwa domyślną ramkę */
+}
+
+/* Jeśli chcesz, aby film był wyśrodkowany i miał określone odstępy */
+.background iframe {
+    width: 80%; /* Możesz dostosować szerokość według potrzeby */
+    max-width: 560px;
+    height: auto;
+}
